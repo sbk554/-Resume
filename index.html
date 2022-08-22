@@ -289,15 +289,16 @@
         
         $( document ).ready( function() {
             const $htbd=$('html, body');
-            const $btn1=$('.btn1');
+            const $btn1=$('.button');
             const $btn2=$('.btn2');
             const $nvi=$('.nvi');
             const $navi=$('.navi');
             $('.main').addClass('magictime swashIn');
             $htbd.css({'overflow': 'hidden', 'height': '100%'});
             $navi.css('display','none');
-            $('.button').click(function(){
+            $btn1.click(function(){
                 $htbd.css('overflow','visible');
+                $('html').css('overflow','visible');
                 $navi.css('display','block');
             });
             $('.btn').click( function() {
