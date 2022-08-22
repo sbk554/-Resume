@@ -341,7 +341,7 @@
             $btn2.click(function(){
                 if($nvi.hasClass('more')){ 
                     $nvi.addClass('magictime spaceOutRight');
-                    $navi.css({'backdrop-filter':'none','z-index':'9','width':'40%'});
+                    $navi.css({'backdrop-filter':'none','z-index':'9','width':'40%','background-color':'transparent'});
                     $btn2.css({'width':'12%','height':'9%'});
                     $('#main').css('z-index','0');
                 }else if($nvi.addClass('close')){
@@ -350,7 +350,7 @@
             });
             $btn2.click(function(){
             if($nvi.hasClass('close')){
-                $navi.css({'backdrop-filter':'blur(10px)','z-index':'10','width':'100%'});
+                $navi.css({'backdrop-filter':'blur(10px)','z-index':'10','width':'100%','background-color':'rgba(205, 205, 205, 0.5)'});
                 $btn2.css({'width':'5%','height':'10%'});
                 $('#main').css('z-index','1');
                 $nvi.addClass('magictime spaceInRight');
