@@ -42,7 +42,7 @@
                     <li style="line-height: 1;">Resume</li>
                     <li style="line-height: 1.5;font-size: 4rem;">Welcome to my website</li>
                     <li style="line-height: 1.5;font-size: 4rem;">I'd appreciate it if you could read my resume!</li>
-                    <li style="font-size: 1rem;padding-top: 10%; z-index: 9;"><a href="./index.html#profile"><button class="button" type="button">START</button></a></li>
+                    <li style="font-size: 1rem;padding-top: 10%; z-index: 9;"><button class="button" type="button">START</button></li>
                 </div>
             </ul>
         </div>
@@ -306,6 +306,8 @@
             $(document).on('click','.button',function(){
                 $hd.off('scroll touchmove mousewheel');                                                        
                 $navi.css('display','block');
+                let location = document.querySelector('#profile').offsetTop;
+                $('html,body').animate({scrollTop:location},0);
             });
             $('.btn').click( function() {
                 $('.btn_sub').slideToggle(500);
