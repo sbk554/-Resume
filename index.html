@@ -21,7 +21,7 @@
 </head>
 <body>
     <header id="main">
-        <div class="navi">
+        <div class="navi" style="display: none;">
                 <nav>
                     <ul>
                         <div class="btn4">
@@ -303,13 +303,10 @@
                 event.stopPropagation();
                 return false;
             });
-            $navi.css('display','none');
-            (function(jQuery) {
             $( document ).on('click','.button',function(){
                 $hd.off('scroll touchmove mousewheel');
                 $navi.css('display','block');
             });
-        } (jQuery));
             $('.btn').click( function() {
                 $('.btn_sub').slideToggle(500);
                 $('.intro2').slideToggle(500);
