@@ -305,8 +305,12 @@
             });
             $navi.css('display','none');
             $( document ).on('click','.button',function(){
+                if($navi.css('display') ==='none'){
                 $hd.off('scroll touchmove mousewheel');
                 $navi.css('display','block');
+                }else{
+                    $navi.css('display','none');
+                }
             });
             $('.btn').click( function() {
                 $('.btn_sub').slideToggle(500);
