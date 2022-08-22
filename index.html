@@ -297,6 +297,8 @@
             const $btn2=$('.btn2');
             const $nvi=$('.nvi');
             const $navi=$('.navi');
+            var $ = jQuery;
+            (function($) {
             $('.main').addClass('magictime swashIn');
             $hd.on('scroll touchmove mousewheel', function(event) {
                 event.preventDefault();
@@ -305,12 +307,8 @@
             });
             $navi.css('display','none');
             $( document ).on('click','.button',function(){
-                if($navi.css('display') ==='none'){
                 $hd.off('scroll touchmove mousewheel');
                 $navi.css('display','block');
-                }else{
-                    $navi.css('display','none');
-                }
             });
             $('.btn').click( function() {
                 $('.btn_sub').slideToggle(500);
@@ -333,6 +331,7 @@
                 setTimeout(function() { $nvi.addClass('close').removeClass('more');});
             }
         });
+    } (jQuery));
         });
       </script>
 </body>
