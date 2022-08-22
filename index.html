@@ -28,11 +28,11 @@
                         <div class="btn4">
                             <li><a><button class="btn2" type="button"><i class="fa-solid fa-align-justify"></i></button></a></li>
                         </div>
-                            <ul class="nvi close">
-                                <li ><a href="./index.html#main">Intro</a></li>
-                                <li ><a href="./index.html#profile">Resume</a></li>
-                                <li ><a href="./index.html#portfolio">Portfolio</a></li>
-                                <li ><a href="./index.html#last">Greetings</a></li>
+                            <ul class="nvi close" style="cursor: pointer;">
+                                <li><a class="nvi_1">Intro</a></li>
+                                <li><a class="nvi_2">Resume</a></li>
+                                <li><a class="nvi_3">Portfolio</a></li>
+                                <li><a class="nvi_4">Greetings</a></li>
                             </ul>
                     </ul>        
                 </nav>
@@ -300,6 +300,7 @@
     <script>
 
         $(document).ready( function() {
+            const $htbd=$('html,body');
             const $hd=$('header');
             const $btn1=$('.button');
             const $btn2=$('.btn2');
@@ -311,11 +312,27 @@
                 event.stopPropagation();
                 return false;
             });
+            $('.nvi_1').click(function(){
+                let location = document.querySelector('#main').offsetTop;
+                $htbd.animate({scrollTop:location},0);
+            });
+            $('.nvi_2').click(function(){
+                let location = document.querySelector('#profile').offsetTop;
+                $htbd.animate({scrollTop:location},0);
+            });
+            $('.nvi_3').click(function(){
+                let location = document.querySelector('#portfolio').offsetTop;
+                $htbd.animate({scrollTop:location},0);
+            });
+            $('.nvi_4').click(function(){
+                let location = document.querySelector('#last').offsetTop;
+                $htbd.animate({scrollTop:location},0);
+            });
             $(document).on('click','.button',function(){
                 $hd.off('scroll touchmove mousewheel');                                                        
                 $navi.css('display','block');
                 let location = document.querySelector('#profile').offsetTop;
-                $('html,body').animate({scrollTop:location},0);
+                $htbd.animate({scrollTop:location},0);
             });
             $('.btn').click( function() {
                 $('.btn_sub').slideToggle(500);
