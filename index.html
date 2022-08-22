@@ -22,7 +22,6 @@
 <body>
     <header id="main">
         <div class="navi">
-            
                 <nav>
                     <ul>
                         <div class="btn4">
@@ -36,7 +35,6 @@
                             </ul>
                     </ul>        
                 </nav>
-
         </div>
         <div class="main">
             <ul>
@@ -286,7 +284,7 @@
     </footer>
 
     <script>
-        
+
         $( document ).ready( function() {
             const $htbd=$('html, body');
             const $btn1=$('.button');
@@ -296,10 +294,8 @@
             $('.main').addClass('magictime swashIn');
             $htbd.css({'overflow': 'hidden', 'height': '100%'});
             $navi.css('display','none');
-            $btn1.click(function(){
+            jQuery('.button').click(function(){
                 $htbd.css('overflow','visible');
-                $('html').css('overflow','visible');
-                $('body').css('overflow','visible');
                 $navi.css('display','block');
             });
             $('.btn').click( function() {
@@ -323,7 +319,6 @@
                 setTimeout(function() { $nvi.addClass('close').removeClass('more');});
             }
         });
-
         });
       </script>
 </body>
