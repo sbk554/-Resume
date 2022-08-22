@@ -292,16 +292,20 @@
     <script>
 
         $( document ).ready( function() {
-            const $htbd=$('html, body');
+            const $hd=$('header');
             const $btn1=$('.button');
             const $btn2=$('.btn2');
             const $nvi=$('.nvi');
             const $navi=$('.navi');
             $('.main').addClass('magictime swashIn');
-            $htbd.css({'overflow': 'hidden', 'height': '100%'});
+            $hd.on('scroll touchmove mousewheel', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return false;
+            });
             $navi.css('display','none');
             $btn1.click(function(){
-                $htbd.css('overflow','visible');
+                $hd.off('scroll touchmove mousewheel');
                 $navi.css('display','block');
             });
             $btn1.click(function(){
