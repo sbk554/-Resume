@@ -44,7 +44,7 @@
                     <li class="wow fadeInLeft customer_list" data-wow-delay="1.0s" style="visibility: visible; animation-delay: 1.0s;animation-name: fadeInLeft;line-height: 1;">Resume</li>
                     <li class="wow fadeInLeft customer_list" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s;animation-name: fadeInLeft;line-height: 1.5;font-size: 4rem;">Welcome to my website</li>
                     <li class="wow fadeInLeft customer_list" data-wow-delay="2.0s" style="visibility: visible; animation-delay: 2.0s;animation-name: fadeInLeft;line-height: 1.5;font-size: 4rem;">I'd appreciate it if you could read my resume!</li>
-                    <li class="wow fadeInLeft customer_list" data-wow-delay="2.5s" style="visibility: visible; animation-delay: 2.5s;animation-name: fadeInLeft;font-size: 1rem;padding-top: 10%; z-index: 9;"><a href="./index.html#profile"><button class="btn1" type="button">START</button></a></li>
+                    <li class="wow fadeInLeft customer_list" data-wow-delay="2.5s" style="visibility: visible; animation-delay: 2.5s;animation-name: fadeInLeft;font-size: 1rem;padding-top: 10%; z-index: 9;"><a class="button" href="./index.html#profile"><button class="btn1" type="button">START</button></a></li>
                 </div>
             </ul>
         </div>
@@ -293,12 +293,10 @@
             const $btn2=$('.btn2');
             const $nvi=$('.nvi');
             const $navi=$('.navi');
-            $(function(){
-                $('.main').addClass('magictime swashIn');
-                $htbd.css({'overflow': 'hidden', 'height': '100%'});
-                $navi.css('display','none');
-            });
-            $btn1.click(function(){
+            $('.main').addClass('magictime swashIn');
+            $htbd.css({'overflow': 'hidden', 'height': '100%'});
+            $navi.css('display','none');
+            $('.button').click(function(){
                 $htbd.css('overflow','visible');
                 $navi.css('display','block');
             });
