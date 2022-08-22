@@ -187,7 +187,7 @@ html{
     animation: ring 1.5s infinite;
 }
 
-/* section1 */
+/* section */
 #profile{
     width: 100%;
     max-width: 1440px;
@@ -215,19 +215,19 @@ html{
     border-radius: 150px;
     border: 2px solid #ffffff;
 }
-.pro_text,.pro_text1,.pro_text2{
+.pro_text,.pro_text1,.pro_text2,.pro_text3{
     color: #ffffff;
     text-align: left;
     line-height: 1.5;
 }
 .pro_text h1{
-    margin-top: 100px;
-    font-size: 25px;
+    margin-top: 60px;
+    font-size: 20px;
     font-weight: 300;
 }
 .pro_text h2{
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .pro_text h4{
     margin-top: 20px;
@@ -244,25 +244,54 @@ html{
 } */
 .pro_text1 h1{
     margin-top: 80px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
 }
 .pro_text1 h2{
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .pro_text1 h3{
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 10.7px;
 }
 .pro_text2 h1{
     margin-top: 80px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
 }
 .pro_text2 h2{
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 15px;
+}
+.pro_text3 h1{
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.pro_text3 h2{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.pro_text3 h3{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.pro_text3 h2::after{
+    padding-top: 3%;
+    content:"";
+    display: block;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 2px;
+    width: 100%;
+}
+.pro_text3 h3::after{
+    padding-top: 3%;
+    content:""; 
+    display: block;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 2px;
+    width: 40%;
 }
 .container1{
     background-color: #ffffff;
