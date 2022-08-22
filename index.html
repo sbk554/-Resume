@@ -294,7 +294,8 @@
             $('.main').addClass('magictime swashIn');
             $htbd.css({'overflow': 'hidden', 'height': '100%'});
             $navi.css('display','none');
-            $(document).on('click','.button',function(){
+            $(document).on('click','.button',function(e){
+                console.log(e,target);
                 $htbd.css('overflow','visible');
                 $navi.css('display','block');
             });
