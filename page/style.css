@@ -82,10 +82,11 @@ html{
     position:fixed;
     right: 0;
     top: 0;
-    z-index: -1;
+    z-index: 10;
     line-height: 3;
-    width: 100%;
+    width: 40%;
     height: 100%;
+
 }
 .nvi,.btn2{
     z-index: 9;
@@ -107,18 +108,17 @@ html{
     position: absolute;
     font-size: 3rem;
     color: #CD853F;
-    width: 5%;
-    height: 10%;
+    width: 12%;
+    height: 9%;
     background-color: rgb(255,218,185);
     z-index: 1;
-    margin-top: 2%;
     border: 1px solid #800000;
 }
 .btn4{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 90%;
+    width: 100%;
 }
 .btn2:hover{
     color: #800000;
@@ -145,10 +145,14 @@ html{
     width: 98%;
     height: 96%;
     display: flex;
-	flex-direction: column;
     justify-content: center;
 	align-items: center;
     text-align: center;
+}
+.intro_page{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
 }
 .main>ul>div>li{    
     font-size: 16rem;
@@ -189,7 +193,26 @@ html{
     transform: translate(-50%, -50%);
     animation: ring 1.5s infinite;
 }
-
+.intro_page1{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+	align-items: flex-end;
+}
+.in_pa{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.main1{
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    height: 100%;
+    position: relative;
+}
 /* section */
 #profile{
     width: 100%;
