@@ -7,7 +7,6 @@
     <title>Resume</title>
     <!-- <link rel="stylesheet" href="./page/style.css"> -->
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
     <link rel="shortcut icon" href="./img/icon_re.png" type="image/x-icon">
     <link rel="stylesheet" href="./page/magic.css">
     <link rel="stylesheet" href="./page/animate.css">
@@ -296,6 +295,10 @@
             $htbd.css({'overflow': 'hidden', 'height': '100%'});
             $navi.css('display','none');
             $(document).on('click','.button',function(){
+                $htbd.css('overflow','visible');
+                $navi.css('display','block');
+            });
+            $btn1.click(function(){
                 $htbd.css('overflow','visible');
                 $navi.css('display','block');
             });
